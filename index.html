@@ -14,10 +14,10 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
-                        'Acent': '#3752FD',
-                        'box': '#F4F7FF',
-                        'gradient-2':'#6C7FFA',
-                        'gradient-3':'#9BA8F8',
+                        'accent': '#3752FD',
+                        'text': '#00303C',
+                        'gradient2':'#6C7FFA',
+                        'gradient3':'#9BA8F8',
                         'background':'#F4F7FF'
                     }
                 }
@@ -47,7 +47,157 @@
         </nav>
     </header>
     <main>
+        <section class="container mx-auto flex gap-6 mb-14">
+            <div class="bg-white w-3/4 rounded-2xl pt-6 pb-8">
+                <div class="grid grid-cols-4 gap-6 mx-6">
+                    <div class="bg-background rounded-2xl p-4 flex gap-3 items-center">
+                        <div class="bg-white p-5 rounded-full">
+                            <img  src="./assets/checkbox.png" alt="">
+                        </div>
+                        <div>
+                            <p class="font-medium">Task Assigned</p>
+                            <h1 class="font-bold text-3xl">06</h1>
+                        </div>
+                    </div>
+                    <div class="bg-gradient-to-r from-accent via-gradient2 to-gradient3 rounded-2xl p-4 flex gap-3 items-center col-span-2">
+                        <img src="./assets/board.png" alt="">
+                        <h2 class="text-2xl text-white">Discover Something New Today!</h2>
+                    </div>
+                    <div class="bg-background rounded-2xl p-4 flex gap-3 items-center">
+                        <div class="bg-white p-5 rounded-full">
+                            <img  src="./assets/calender.png" alt="">
+                        </div>
+                        <div >
+                            <p class="text-2xl">Wed,</p>
+                            <h1 class="text-2xl font-bold">Jul 28 2025</h1>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-8 border-t-2 border-dashed border-blue-100">
+                <div class="grid grid-cols-3 gap-6 mx-6">
+                    <!-- first box -->
+                    <div class="bg-background rounded-2xl p-6">
+                        <button class="bg-white rounded-lg px-4 py-2 text-base">
+                            <h4>ShopEase</h4>
+                        </button>
+                        <h2 class="font-medium text-2xl my-4">Fix Mobile Button Issue</h2>
+                        <div class="bg-white rounded-lg p-4 font-regular text-gray-500 h-[92px] line-clamp-3">
+                            <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+                        </div>
+                        <hr class="my-3 border-t-2 border-dashed border-blue-100">
+                        <div class="flex gap-3 items-center justify-between">
+                            <div>
+                                <p class="text-text text-sm">Deadline</p>
+                                <h4 class="font-medium">21 March 2025</h4>
+                            </div>
+                            <button class="bg-accent text-white rounded-lg py-[10px] px-5">Completed</button>
+                        </div>
+                    </div>
+                    <!-- second box -->
+                    <div class="bg-background rounded-2xl p-6">
+                        <button class="bg-white rounded-lg px-4 py-2 text-base">
+                            <h4>CloudSync</h4>
+                        </button>
+                        <h2 class="font-medium text-2xl my-4">Add Dark Mode</h2>
+                        <div class="bg-white rounded-lg p-4 font-regular text-gray-500 h-[92px] line-clamp-3">
+                            <p>Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
+                        </div>
+                        <hr class="my-3 border-t-2 border-dashed border-blue-100">
+                        <div class="flex gap-3 items-center justify-between">
+                            <div>
+                                <p class="text-text text-sm">Deadline</p>
+                                <h4 class="font-medium">21 March 2025</h4>
+                            </div>
+                            <button class="bg-accent text-white rounded-lg py-[10px] px-5">Completed</button>
+                        </div>
+                    </div>
+                    <!-- third box -->
+                    <div class="bg-background rounded-2xl p-6">
+                        <button class="bg-white rounded-lg px-4 py-2 text-base">
+                            <h4>SwiftPay</h4>
+                        </button>
+                        <h2 class="font-medium text-2xl my-4">Optimize  Home page </h2>
+                        <div class="bg-white rounded-lg p-4 font-regular text-gray-500 h-[92px] line-clamp-3">
+                            <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+                        </div>
+                        <hr class="my-3 border-t-2 border-dashed border-blue-100">
+                        <div class="flex gap-3 items-center justify-between">
+                            <div>
+                                <p class="text-text text-sm">Deadline</p>
+                                <h4 class="font-medium">21 March 2025</h4>
+                            </div>
+                            <button class="bg-accent text-white rounded-lg py-[10px] px-5">Completed</button>
+                        </div>
+                    </div>
+                    <!-- fourth box -->
+                    <div class="bg-background rounded-2xl p-6">
+                        <button class="bg-white rounded-lg px-4 py-2 text-base">
+                            <h4>Meta</h4>
+                        </button>
+                        <h2 class="font-medium text-2xl my-4">Add new emoji 🤲</h2>
+                        <div class="bg-white rounded-lg p-4 font-regular text-gray-500 h-[92px] line-clamp-3">
+                            <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+                        </div>
+                        <hr class="my-3 border-t-2 border-dashed border-blue-100">
+                        <div class="flex gap-3 items-center justify-between">
+                            <div>
+                                <p class="text-text text-sm">Deadline</p>
+                                <h4 class="font-medium">21 March 2025</h4>
+                            </div>
+                            <button class="bg-accent text-white rounded-lg py-[10px] px-5">Completed</button>
+                        </div>
+                    </div>
+                    <!-- fifth box -->
+                    <div class="bg-background rounded-2xl p-6">
+                        <button class="bg-white rounded-lg px-4 py-2 text-base">
+                            <h4>Google LLC</h4>
+                        </button>
+                        <h2 class="font-medium text-2xl my-4">Integrate OpenAI API</h2>
+                        <div class="bg-white rounded-lg p-4 font-regular text-gray-500 h-[92px] line-clamp-3">
+                            <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+                        </div>
+                        <hr class="my-3 border-t-2 border-dashed border-blue-100">
+                        <div class="flex gap-3 items-center justify-between">
+                            <div>
+                                <p class="text-text text-sm">Deadline</p>
+                                <h4 class="font-medium">21 March 2025</h4>
+                            </div>
+                            <button class="bg-accent text-white rounded-lg py-[10px] px-5">Completed</button>
+                        </div>
+                    </div>
+                    <!-- sixth box -->
+                    <div class="bg-background rounded-2xl p-6">
+                        <button class="bg-white rounded-lg px-4 py-2 text-base">
+                            <h4>Glassdoar</h4>
+                        </button>
+                        <h2 class="font-medium text-2xl my-4">Improve Job searching</h2>
+                        <div class="bg-white rounded-lg p-4 font-regular text-gray-500 h-[92px] line-clamp-3">
+                            <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+                        </div>
+                        <hr class="my-3 border-t-2 border-dashed border-blue-100">
+                        <div class="flex gap-3 items-center justify-between">
+                            <div>
+                                <p class="text-text text-sm">Deadline</p>
+                                <h4 class="font-medium">21 March 2025</h4>
+                            </div>
+                            <button class="bg-accent text-white rounded-lg py-[10px] px-5">Completed</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white w-1/4 rounded-2xl">
+                <div class="flex-col text-center mb-6">
+                    <div class="flex gap-4 items-center justify-center p-6 font-medium text-xl">
+                        <img src="./assets/activity.png" alt="">
+                        <h4>Activity Log</h4>
+                    </div>
+                    
+                    <button class="text-white bg-accent px-5 py-2 font-medium rounded-lg">Clear History</button>
+                </div>
+                <hr class="border-t-2 border-dashed border-blue-100">
+            </div>
 
+        </section>
     </main>
 </body>
 </html>
