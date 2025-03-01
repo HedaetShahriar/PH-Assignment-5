@@ -66,11 +66,11 @@
                         </div>
                         <div>
                             <p class="font-medium">Task Assigned</p>
-                            <h1 class="text-3xl font-bold">06</h1>
+                            <h1 class="text-3xl font-bold">0<span id="taskNumber">6</span></h1>
                         </div>
                     </div>
                     <!-- discover button -->
-                    <button class="flex items-center col-span-2 gap-3 p-4 bg-gradient-to-r from-accent via-gradient2 to-gradient3 rounded-2xl">
+                    <button id="btnDiscover" class="flex items-center col-span-2 gap-3 p-4 bg-gradient-to-r from-accent via-gradient2 to-gradient3 rounded-2xl">
                         <img src="./assets/board.png" alt="">
                         <h2 class="text-2xl text-white">Discover Something New Today!</h2>
                     </button>
@@ -79,8 +79,7 @@
                         <div class="p-5 bg-white rounded-full">
                             <img  src="./assets/calender.png" alt="">
                         </div>
-                        <div >
-                            <h1 class="text-2xl">Wed, <br><span class="font-bold ">Jul 28 2025</span></h1>
+                        <div id="date">
                         </div>
                     </div>
                 </div>
@@ -216,6 +215,7 @@
         </section>
     </main>
     <script src="./script/navbar.js"></script>
+    <script src="./script/task.js"></script>
     
 </body>
 </html>
