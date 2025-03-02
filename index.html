@@ -30,20 +30,18 @@
         }
         .activity{
             background-color: #F4F7FF;
-            margin-left: 10px;
-            margin-right: 10px;
             padding: 10px;
-            margin-top: 24px;
             border-radius: 8px;
+            margin-bottom: 20px;
         }
     </style>
 </head>
-<body id="body" class="poppins bg-background">
+<body id="body" class="poppins bg-background px-2">
     <header>
-        <nav class="container flex items-center justify-between p-6 mx-auto my-6 bg-white drop-shadow-sm rounded-2xl">
+        <nav class="container flex items-center justify-between p-3 md:p-5 lg:p-6 mx-auto my-3 md:my-5 lg:my-6 bg-white drop-shadow-md rounded-2xl">
             <div class="flex items-center gap-3">
                 <img src="./assets/logo.png" alt="">
-                <h1 class="text-3xl">Dev<span class="font-bold">Board</span></h1>
+                <h1 class="hidden text-3xl md:block">Dev<span class="font-bold">Board</span></h1>
             </div>
             <div class="flex items-center gap-3">
                 <div class="flex gap-3 items-center bg-background rounded-[32px] px-4 py-3">
@@ -55,28 +53,28 @@
         </nav>
     </header>
     <main>
-        <section class="container flex gap-6 mx-auto mb-14">
+        <section class="container flex flex-col md:flex-row gap-2 md:gap-4 lg:gap-6 mx-auto mb-14">
             <!-- Items box -->
-            <div class="w-[calc(75%-24px)] py-8 bg-white rounded-2xl drop-shadow-sm">
-                <div class="grid grid-cols-4 gap-6 mx-6">
+            <div class="md:w-[calc(75%-24px)] py-4 md:py-5 lg:py-6 bg-white rounded-2xl drop-shadow-sm">
+                <div class="grid lg:grid-cols-4 gap-3 md:gap-5 lg:gap-6 mx-4 lg:mx-6 md:mx-5">
                     <!-- task assigned -->
-                    <div class="flex items-center gap-3 p-4 bg-background rounded-2xl">
-                        <div class="p-5 bg-white rounded-full">
-                            <img  src="./assets/checkbox.png" alt="">
+                    <div class="flex items-center gap-1 md:gap-3 p-2 lg:p-4 bg-background rounded-2xl drop-shadow-sm">
+                        <div class="p-3 md:p-4 lg:p-5 bg-white rounded-full">
+                            <img src="./assets/checkbox.png" alt="">
                         </div>
                         <div>
                             <p class="font-medium">Task Assigned</p>
-                            <h1 class="text-3xl font-bold">0<span id="taskNumber">6</span></h1>
+                            <h1 class="text-xl md:text-2xl lg:text-3xl font-bold">0<span id="taskNumber">6</span></h1>
                         </div>
                     </div>
                     <!-- discover button -->
-                    <button id="btnDiscover" class="flex items-center col-span-2 gap-3 p-4 bg-gradient-to-r from-accent via-gradient2 to-gradient3 rounded-2xl">
+                    <button id="btnDiscover" class="flex items-center col-span-2 order-3 lg:order-none gap-3 p-4 bg-gradient-to-r from-accent via-gradient2 to-gradient3 rounded-2xl">
                         <img src="./assets/board.png" alt="">
                         <h2 class="text-2xl text-white">Discover Something New Today!</h2>
                     </button>
                     <!-- calender -->
-                    <div class="flex items-center gap-3 p-4 bg-background rounded-2xl">
-                        <div class="p-5 bg-white rounded-full">
+                    <div class="flex items-center gap-3 p-4 bg-background rounded-2xl drop-shadow-sm">
+                        <div class="p-3 md:p-4 lg:p-5 bg-white rounded-full">
                             <img  src="./assets/calender.png" alt="">
                         </div>
                         <div id="date">
@@ -84,16 +82,16 @@
                         </div>
                     </div>
                 </div>
-                <hr class="my-8 border-t-2 border-blue-100 border-dashed">
+                <hr class="my-4 md:my-5 lg:my-6 border-t-2 border-blue-100 border-dashed">
                 <!-- item boxes -->
-                <div class="grid grid-cols-3 gap-6 mx-6">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5 lg:gap-6 mx-4 md:mx-5 lg:mx-6">
                     <!-- first box -->
-                    <div class="p-6 bg-background rounded-2xl">
+                    <div class="p-4 md:p-5 lg:p-6 bg-background rounded-2xl drop-shadow-sm">
                         <button class="px-4 py-2 text-base bg-white rounded-lg">
                             <h4>ShopEase</h4>
                         </button>
-                        <h2 id="box1" class="my-4 text-2xl font-medium">Fix Mobile Button Issue</h2>
-                        <div class="bg-white rounded-lg p-4 font-regular text-gray-500 h-[92px] line-clamp-3">
+                        <h2 id="box1" class="my-2 md:my-3 lg:my- text-2xl font-medium">Fix Mobile Button Issue</h2>
+                        <div class="bg-white rounded-lg p-2 md:p-3 lg:p-4 font-regular text-gray-500 h-[92px] line-clamp-3">
                             <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
                         </div>
                         <hr class="my-3 border-t-2 border-blue-100 border-dashed">
@@ -106,12 +104,12 @@
                         </div>
                     </div>
                     <!-- second box -->
-                    <div class="p-6 bg-background rounded-2xl">
+                    <div class="p-4 md:p-5 lg:p-6 bg-background rounded-2xl drop-shadow-sm">
                         <button class="px-4 py-2 text-base bg-white rounded-lg">
                             <h4>CloudSync</h4>
                         </button>
-                        <h2 id="box2" class="my-4 text-2xl font-medium">Add Dark Mode</h2>
-                        <div class="bg-white rounded-lg p-4 font-regular text-gray-500 h-[92px] line-clamp-3">
+                        <h2 id="box2" class="my-2 md:my-3 lg:my- text-2xl font-medium">Add Dark Mode</h2>
+                        <div class="bg-white rounded-lg p-2 md:p-3 lg:p-4 font-regular text-gray-500 h-[92px] line-clamp-3">
                             <p>Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
                         </div>
                         <hr class="my-3 border-t-2 border-blue-100 border-dashed">
@@ -124,12 +122,12 @@
                         </div>
                     </div>
                     <!-- third box -->
-                    <div class="p-6 bg-background rounded-2xl">
+                    <div class="p-4 md:p-5 lg:p-6 bg-background rounded-2xl drop-shadow-sm">
                         <button class="px-4 py-2 text-base bg-white rounded-lg">
                             <h4>SwiftPay</h4>
                         </button>
-                        <h2 id="box3" class="my-4 text-2xl font-medium">Optimize  Home page </h2>
-                        <div class="bg-white rounded-lg p-4 font-regular text-gray-500 h-[92px] line-clamp-3">
+                        <h2 id="box3" class="my-2 md:my-3 lg:my- text-2xl font-medium">Optimize  Home page </h2>
+                        <div class="bg-white rounded-lg p-2 md:p-3 lg:p-4 font-regular text-gray-500 h-[92px] line-clamp-3">
                             <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
                         </div>
                         <hr class="my-3 border-t-2 border-blue-100 border-dashed">
@@ -142,12 +140,12 @@
                         </div>
                     </div>
                     <!-- fourth box -->
-                    <div class="p-6 bg-background rounded-2xl">
+                    <div class="p-4 md:p-5 lg:p-6 bg-background rounded-2xl drop-shadow-sm">
                         <button class="px-4 py-2 text-base bg-white rounded-lg">
                             <h4>Meta</h4>
                         </button>
-                        <h2 id="box4" class="my-4 text-2xl font-medium">Add new emoji 🤲</h2>
-                        <div class="bg-white rounded-lg p-4 font-regular text-gray-500 h-[92px] line-clamp-3">
+                        <h2 id="box4" class="my-2 md:my-3 lg:my- text-2xl font-medium">Add new emoji 🤲</h2>
+                        <div class="bg-white rounded-lg p-2 md:p-3 lg:p-4 font-regular text-gray-500 h-[92px] line-clamp-3">
                             <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
                         </div>
                         <hr class="my-3 border-t-2 border-blue-100 border-dashed">
@@ -160,12 +158,12 @@
                         </div>
                     </div>
                     <!-- fifth box -->
-                    <div class="p-6 bg-background rounded-2xl">
+                    <div class="p-4 md:p-5 lg:p-6 bg-background rounded-2xl drop-shadow-sm">
                         <button class="px-4 py-2 text-base bg-white rounded-lg">
                             <h4>Google LLC</h4>
                         </button>
-                        <h2 id="box5" class="my-4 text-2xl font-medium">Integrate OpenAI API</h2>
-                        <div class="bg-white rounded-lg p-4 font-regular text-gray-500 h-[92px] line-clamp-3">
+                        <h2 id="box5" class="my-2 md:my-3 lg:my- text-2xl font-medium">Integrate OpenAI API</h2>
+                        <div class="bg-white rounded-lg p-2 md:p-3 lg:p-4 font-regular text-gray-500 h-[92px] line-clamp-3">
                             <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
                         </div>
                         <hr class="my-3 border-t-2 border-blue-100 border-dashed">
@@ -178,12 +176,12 @@
                         </div>
                     </div>
                     <!-- sixth box -->
-                    <div class="p-6 bg-background rounded-2xl">
+                    <div class="p-4 md:p-5 lg:p-6 bg-background rounded-2xl drop-shadow-sm">
                         <button class="px-4 py-2 text-base bg-white rounded-lg">
                             <h4>Glassdoar</h4>
                         </button>
-                        <h2 id="box6" class="my-4 text-2xl font-medium">Improve Job searching</h2>
-                        <div class="bg-white rounded-lg p-4 font-regular text-gray-500 h-[92px] line-clamp-3">
+                        <h2 id="box6" class="my-2 md:my-3 lg:my- text-2xl font-medium">Improve Job searching</h2>
+                        <div class="bg-white rounded-lg p-2 md:p-3 lg:p-4 font-regular text-gray-500 h-[92px] line-clamp-3">
                             <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
                         </div>
                         <hr class="my-3 border-t-2 border-blue-100 border-dashed">
@@ -198,16 +196,16 @@
                 </div>
             </div>
             <!-- activity box -->
-            <div class="w-1/4 bg-white rounded-2xl drop-shadow-sm">
-                <div class="flex-col mb-6 text-center">
-                    <div class="flex items-center justify-center gap-4 p-6 text-xl font-medium">
+            <div class="md:w-1/4 bg-white rounded-2xl p-4 md:p-5 lg:p-6 drop-shadow-sm">
+                <div class="flex-col text-center">
+                    <div class="flex items-center justify-center gap-4 mb-4 md:mb-5 lg:mb-6  text-xl font-medium">
                         <img src="./assets/activity.png" alt="">
                         <h4>Activity Log</h4>
                     </div>
                     <!-- clear History button -->
                     <button id="btnClear" class="px-5 py-2 font-medium text-white rounded-lg bg-accent">Clear History</button>
                 </div>
-                <hr class="border-t-2 border-blue-100 border-dashed">
+                <hr class="my-4 md:my-5 lg:my-6 border-t-2 border-blue-100 border-dashed">
                 <!-- activities -->
                 <div id="activity">
                     
