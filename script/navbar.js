@@ -1,5 +1,6 @@
 document.getElementById("navButton").addEventListener("click", function() {
-    let colors = ["#FF0000", "#00FF00", "#0000FF", "#FFFF00", "#FF00FF", "#00FFFF", "#F4F7FF"];
+    const colors = ["#E6F7FF", "#D4EDFF", "#F0F0F0", "#E4E4E4", 
+                "#C2E2FF", "#E3FFE6", "#D1F8D6", "#C2F0C5"];
     let randomColor = colors[Math.floor(Math.random() * colors.length)];
     document.getElementById("body").style.backgroundColor = randomColor;
 })
